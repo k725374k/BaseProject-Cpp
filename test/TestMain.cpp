@@ -21,5 +21,6 @@ void testDrawCardcount() {
 int main() {
     assert(addNumber(5, 2) == 7);
     testGetTriangleType();
+    testDrawCardcount();
     return 0;
 }
