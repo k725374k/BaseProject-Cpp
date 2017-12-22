@@ -3,6 +3,13 @@
 
 void testGetTriangleType() {
     assert(getTriangleType(3, 4, 5) == 0);
+    assert(getTriangleType(4, 3, 5) == 0);
+    assert(getTriangleType(5, 3, 4) == 0);
+    assert(getTriangleType(3, 4, 5) == 0);
+    assert(getTriangleType(3, 4, 6) == -1);
+    assert(getTriangleType(1, 1, 2) == -2);
+    assert(getTriangleType(7, 8, 9) == 1);
+    assert(getTriangleType(0, 0, -1) == -3);
 }
 
 int main() {
