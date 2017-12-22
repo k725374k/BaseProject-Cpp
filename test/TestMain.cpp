@@ -11,6 +11,13 @@ void testGetTriangleType() {
     assert(getTriangleType(7, 8, 9) == 1);
 }
 
+void testDrawCardcount() {
+    assert(drawCardcount(5) == 1);
+    assert(drawCardcount(20) == 4);
+    assert(drawCardcount(100) == 20);
+    assert(drawCardcount(-5) == -1);
+}
+
 int main() {
     assert(addNumber(5, 2) == 7);
     testGetTriangleType();
